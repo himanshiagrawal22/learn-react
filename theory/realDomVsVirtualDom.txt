@@ -1,0 +1,22 @@
+Real Dom ->
+
+What it is->
+The actual DOM created by the browser.
+Directly represents your HTML structure.
+
+
+⚙️ How it works->
+Any change → updates the entire DOM tree (or large parts of it)
+This is slow because DOM operations are expensive.
+
+Example->
+If you change one item in a list, the browser may re-render more than needed
+
+Virtual Dom->
+
+How it works->
+React creates a virtual DOM
+When state changes → creates a new virtual DOM
+Compares old vs new (diffing)
+Updates only the changed parts in real DOM.
+

@@ -1,0 +1,54 @@
+Import & Export in JavaScript (React)
+They are used to share code between files (components, functions, variables, etc.).
+
+
+1. Export
+Export means sending something out of a file so other files can use it.
+✅ Types of Export:
+🔹 (A) Default Export
+Only one per file
+// file: App.js
+export default function App() {
+  return "Hello";
+}
+
+(B) Named Export
+You can export multiple things
+// file: utils.js
+export const add = (a, b) => a + b;
+export const sub = (a, b) => a - b;
+
+
+
+
+
+2. Import
+Import means bringing code into another file.
+
+(A) Import Default Export
+import App from './App';
+--Name can be anything:
+import MyComponent from './App';
+
+(B) Import Named Export
+import { add, sub } from './utils';
+--Rename using alias:
+
+Import Both Together
+import App, { add, sub } from './file';
+
+Real React Example (Using React)
+Button.js
+export default function Button() {
+  return <button>Click</button>;
+}
+
+export const helper = () => console.log("Helper");
+
+
+App.js
+import Button, { helper } from './Button';
+
+function App() {
+  return <Button />;
+}

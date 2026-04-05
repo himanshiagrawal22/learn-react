@@ -1,0 +1,63 @@
+->Vite is a modern frontend build tool that makes creating web apps (especially with React) super fast 
+Simple Definition
+Vite is a tool to start, develop, and build frontend apps quickly.
+
+->Why Vite is Popular
+⚡ 1. Instant Server Start
+No long loading time
+Starts in milliseconds
+⚡ 2. Fast Hot Reload (HMR)
+Changes reflect instantly in browser
+No full page reload needed
+⚡ 3. Uses Native ES Modules
+Modern browsers handle modules directly
+Less bundling during development
+
+->Example (Create React App with Vite)
+npm create vite@latest
+Choose React → done 🎉
+project/
+ ├─ index.html
+ ├─ src/
+ │   ├─ main.jsx
+ │   └─ App.jsx
+ └─ package.json
+
+
+
+-----------project structure or the structure provided by vite------------
+
+-> node_modules  -  node_modules is a folder in your project that contains all the installed packages (dependencies) your project needs.
+node_modules = storage of all libraries your project uses
+when we run 
+npm install
+it downloads packages like:
+React
+Vite
+other dependencies
+and store then inside 
+node_modules/
+
+
+---------src------------
+Src stands for source code.
+It is the main folder where you write your appliacation code in a project.
+Inside src we have-
+src/
+ ├─ App.jsx
+ ├─ main.jsx
+ ├─ assets/
+ ├─ components/
+ └─ styles/
+
+ 📌 main.jsx
+Entry point of your app
+Connects React with HTML (index.html)
+
+
+📌 App.jsx
+Main component (UI starts here)
+
+📌 components/
+Store reusable components
+

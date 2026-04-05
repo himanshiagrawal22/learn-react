@@ -1,0 +1,16 @@
+JSX(JavaScriptXML)-> HTML+JavaScript
+JSX (JavaScript XML) is a syntax used in React that lets you write HTML-like code inside JavaScript.
+Without JSX (plain JavaScript):
+const element = React.createElement('h1', null, 'Hello World');
+
+With JSX:
+const element = <h1>Hello World</h1>;
+
+🔹 How JSX Works
+JSX is not understood by browsers directly.
+It gets converted (transpiled) into JavaScript using tools like Babel.
+
+🔸 Rules of JSX
+1. Use className instead of class
+2. Use {} for JavaScript expressions
+3. All tags must be closed
